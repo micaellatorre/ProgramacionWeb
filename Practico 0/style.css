@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(0deg,  #0e0e0e 0%, #1f1f1f 50%);
+    color: rgba(255, 255, 255, 0.70);
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+}
+
+
+header {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.55);
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.add-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+form input, form button {
+    padding: 0.5rem;
+    font-size: 2rem;
+    border: none;
+    background: transparent;
+    color: #181818;
+}
+
+form button {
+    cursor: pointer;
+    transition: all 0.45s ease;
+}
+
+form button:hover {
+    color: #acff13;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    width: 465px;
+    list-style: none;
+}
+
+.todo {
+    margin: 0.5rem;
+    background-color: rgba(255, 255, 255, 0.55);
+    color: #181818;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px 10px 10px 5px;
+    overflow: hidden;
+}
+
+.todo li {
+    flex: 1;
+}
+
+.trash-btn, .completed-btn {
+    padding: 1rem;
+    border: none;
+    background: #181818;
+    color: #FFFFFF;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.45s ease;
+}
+
+
+.trash-btn {
+    border-radius: 0 5px 5px 0;
+}
+
+.completed-btn:hover {
+    background: #acff13;
+}
+
+.trash-btn:hover {
+    background: #f3221b;
+}
+
+.todo-item {
+    padding: 0rem 0.75rem;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin-left: 0em;
+    transition: all 5s ease;
+}
+
+.todo-item:hover {
+    margin-left: -450px;
+}
+
+.fa-check, .fa-trash {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+    background: #b9ff38;
+}
